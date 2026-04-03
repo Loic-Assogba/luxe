@@ -1,7 +1,11 @@
 .vehicle-choice {
   text-align: center;
   padding: 2rem;
-  background-color: #6d2d0599;
+  background-color: #6d2d0599; /* fond chocolat semi-transparent */
+  background-image: url("/badgroud2.jpg"); /* ton image */
+  background-size: cover;       /* l’image couvre toute la section */
+  background-position: center;  /* centrée */
+  background-repeat: no-repeat; /* pas de répétition */
 }
 
 .vehicle-choice h2 {
