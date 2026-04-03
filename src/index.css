@@ -109,3 +109,19 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* Police par défaut pour tout le projet */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Titres et logo en Montserrat */
+h1, h2, h3, h4, h5, h6, 
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 550;
+}

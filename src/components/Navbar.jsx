@@ -5,7 +5,7 @@ function Navbar() {
 
   return (
     <nav style={styles.nav}>
-      <h2 style={styles.logo}>Gozém-Luxe</h2>
+      <h2 className="logo" style={styles.logo}><strong>Gozem-Luxe</strong></h2>
       <div style={styles.burger} onClick={() => setOpen(!open)}>
         <div style={styles.line}></div>
         <div style={styles.line}></div>
@@ -30,9 +30,10 @@ const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "1rem",
-    backgroundColor: "#000307",
+    backgroundColor: "#c95a16",
     color: "white",
     position: "relative"
+    
   },
   logo: {
     margin: 0
@@ -52,7 +53,7 @@ const styles = {
     position: "absolute",
     top: "60px",
     right: "10px",
-    backgroundColor: "#333",
+    backgroundColor: "#6d2d0599",
     listStyle: "none",
     padding: "1rem",
     borderRadius: "8px"

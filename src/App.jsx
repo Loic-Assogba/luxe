@@ -1,13 +1,11 @@
 import Navbar from "./components/navbar";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <main style={{ padding: "2rem" }}>
-        <h1>Bienvenue 🚀</h1>
-        <p>Ceci est le contenu principal.</p>
-      </main>
+      <Hero />
     </div>
   );
 }
