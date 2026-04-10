@@ -16,7 +16,7 @@ function VehicleChoice() {
 
   const handleChooseCar = (car) => {
     setSelectedCar(car);
-    setPrice(null); // reset prix si on change de voiture
+    setPrice(null);
   };
 
   const handleCalculate = () => {
@@ -34,6 +34,10 @@ function VehicleChoice() {
     setCurrentIndex((prevIndex) =>
       prevIndex === cars.length - 1 ? 0 : prevIndex + 1
     );
+  };
+
+  const handleOrder = () => {
+    alert(`Commande lancée pour ${selectedCar.name} de ${departure} à ${destination}, prix estimé ${price} F`);
   };
 
   return (
@@ -71,9 +75,14 @@ function VehicleChoice() {
           <button onClick={handleCalculate}>Calculer le prix</button>
 
           {price && (
-            <p>
-              Prix estimé : <strong>{price} F</strong>
-            </p>
+            <>
+              <p>
+                Prix estimé : <strong>{price} F</strong>
+              </p>
+              <button className="order-btn" onClick={handleOrder}>
+                Lancer la commande
+              </button>
+            </>
           )}
         </div>
       )}

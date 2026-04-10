@@ -1,11 +1,7 @@
 .vehicle-choice {
   text-align: center;
   padding: 2rem;
-  background-color: #6d2d0599; /* fond chocolat semi-transparent */
-  background-image: url("/badgroud2.jpg"); /* ton image */
-  background-size: cover;       /* l’image couvre toute la section */
-  background-position: center;  /* centrée */
-  background-repeat: no-repeat; /* pas de répétition */
+  background-color: #6d2d0599;
 }
 
 .vehicle-choice h2 {
@@ -75,4 +71,19 @@
     width: 350px;
     height: 200px;
   }
+}
+.order-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: green;
 }
